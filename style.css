@@ -566,4 +566,31 @@ ul.pagination{
 	display: none;
 }
 
+html, form, input, button, select, label, textarea {
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.1;
+  }
+  /* margin、padding 等樣式沒有繼承特性，因此使用 * 讓網頁中所有元素都套用 */
+  * {
+    box-sizing: padding-box;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  /* 部分表單元素會使用瀏覽器樣式，需要獨立撰寫 */
+  input, button, select {
+    border: 1px solid #000;
+    background: none;
+  }
+  /* 表格元素有其獨立樣式，需要獨立撰寫 */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  /* 清單元素有其獨立樣式，需要獨立撰寫 */
+  ol, ul {
+    list-style: none;
+  }
+
 }
